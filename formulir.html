@@ -4,11 +4,13 @@
 	<title></title>
 	<!-- SCRIPT -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-	<script src="assets/js/mainController.js"></script>
+	<script src="assets/js/jquery.hotkeys.js"></script>
+	<script src="assets/js/bootstrap-wysiwyg.js"></script>
 
 	<!-- STYLE -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -16,57 +18,200 @@
 <body>
 	<div class="container">
 	  <div class="row">
-	    <div class="col-md-4 col-sm-5">
+	    <div class="col-md-12">
 	      <div class="tabs-left">
 	        <ul class="nav nav-tabs">
-	          <li class="active"><a href="#a" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span></a></li>
-	          <li><a href="#b" data-toggle="tab"><span class="glyphicon glyphicon-star"></span></a></li>
-	          <li><a href="#c" data-toggle="tab"><span class="glyphicon glyphicon-headphones"></span></a></li>
-	          <li><a href="#d" data-toggle="tab"><span class="glyphicon glyphicon-time"></span></a></li>
-	          <li><a href="#e" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span></a></li>
-	          <li><a href="#f" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span></a></li>
+	          <li class="active"><a href="#a" data-toggle="tab"><i class="fa fa-user icon"></i>Personal Data</a></li>
+	          <li><a href="#b" data-toggle="tab"><i class="fa fa-graduation-cap icon"></i>Education</a></li>
+	          <li><a href="#d" data-toggle="tab"><i class="fa fa-briefcase icon"></i>Work Experience</a></li>
+	          <li><a href="#e" data-toggle="tab"><i class="fa fa-dashboard icon"></i>Skills</a></li>
+	          <li><a href="#f" data-toggle="tab"><i class="fa fa-plus-circle icon"></i>Add New Section</a></li>
 	        </ul>
 	        <div class="tab-content">
 	          <div class="tab-pane active" id="a">
-	            <h3>Who do you Love?</h3>
-	            <ul class="list-group pull-left">
-	              <li class="list-group-item">
-	                <h4>Jen &nbsp; &nbsp;<span class="badge pull-right">100%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>Dezi &nbsp; &nbsp;<span class="badge pull-right">100%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>Eli &nbsp; &nbsp;<span class="badge pull-right">100%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>Mojo &nbsp; &nbsp;<span class="badge pull-right">83%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>Myself &nbsp; &nbsp;<span class="badge pull-right">100%</span></h4>
-	              </li>
-	            </ul>
+	            <form class="form-inline">
+				<fieldset>
+
+				<!-- Tab Name -->
+				<legend>Personal Data</legend>
+
+				<div class="col-md-12">
+					<div class="row">
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="firstname">First Name</label>  
+						  <input id="firstname" name="firstname" type="text" placeholder="First Name" class="form-control input-md" required="">
+						  <span class="help-block">help</span>  
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="lastname">Last Name</label>  
+						  <input id="lastname" name="lastname" type="text" placeholder="Last Name" class="form-control input-md">
+						  <span class="help-block">help</span>  
+						</div>
+					</div>
+
+					<div class="row">
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="placeBirth">Place & Date Of Birth</label>  
+						  <input id="placeBirth" name="placeBirth" type="text" placeholder="Place" class="form-control input-md" style="display: inline-block; margin-right: 10px; width: 70%">
+						  <input id="dob" name="dob" type="text" placeholder="Date of Birth" class="form-control input-md dob" style="display: inline-block;  width: calc(30% - 13px);">
+						  <span class="help-block">help</span>  
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="email">Email</label>  
+						  <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md">
+						  <span class="help-block">help</span> 
+						</div>
+					</div>
+
+					<div class="row">
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="phone">Phone Number</label>  
+						  <input id="phone" name="phone" type="text" placeholder="Phone Number" class="form-control input-md">
+						  <span class="help-block">help</span>  
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="web">Web</label>  
+						  <input id="web" name="web" type="text" placeholder="Web" class="form-control input-md">
+						  <span class="help-block">help</span>  
+						</div>
+					</div>
+
+					<div class="row">
+						<!-- Text input-->
+						<div class="form-group col-md-10">
+						  <label class="control-label" for="address">Address</label>  
+						  <textarea id="address" name="address" type="text" placeholder="Address" class="form-control input-md"></textarea>
+						  <span class="help-block">help</span>  
+						</div>
+					</div>
+
+					<div class="row">
+						<!-- Text input-->
+						<div class="form-group col-md-10">
+						  <label class="control-label" for="profil">Profil</label>  
+						  <textarea id="profil" name="profil" type="text" placeholder="Profil" class="form-control input-md"></textarea>
+						  <span class="help-block">help</span>  
+						</div>
+					</div>
+				</div>
+
+				</fieldset>
+				</form>
+
 	          </div>
+
 	          <div class="tab-pane" id="b">
-	            <h3>What's your Favorite?</h3>
-	            <ul class="list-group pull-left">
-	              <li class="list-group-item">
-	                <h4>Crystals &nbsp; &nbsp;<span class="badge pull-right">100%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>Healing &nbsp; &nbsp;<span class="badge pull-right">90%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>Exploring &nbsp; &nbsp;<span class="badge pull-right">78%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>QiGong &nbsp; &nbsp;<span class="badge pull-right">83%</span></h4>
-	              </li>
-	              <li class="list-group-item">
-	                <h4>Myself &nbsp; &nbsp;<span class="badge pull-right">100%</span>
-	                </h4></li>
-	            </ul>
-	          </div>
+	            <!-- Tab Name -->
+				<legend>Education</legend>
+
+				<form class="form-inline">
+				<fieldset>
+
+				<div class="col-md-12">
+					<div class="row">
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="education">Educational Institution</label>  
+						  <input id="education" name="education" type="text" class="form-control input-md">
+						  <span class="help-block">help</span>  
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="major">Major of</label>  
+						  <input id="major" name="major" type="text" class="form-control input-md">
+						  <span class="help-block">help</span>  
+						</div>
+					</div>
+
+					<div class="row">
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="startEducation">Start date</label>  
+						  <input id="startEducation" name="startEducation" type="text" placeholder="Place" class="form-control input-md">
+						  <span class="help-block">help</span>  
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group col-md-5">
+						  <label class="control-label" for="endEducation">End Date</label>  
+						  <input id="endEducation" name="endEducation" type="text" class="form-control input-md">
+						  <span class="help-block">help</span> 
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="editor col-md-10">
+							<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+						      <div class="btn-group">
+						        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
+						          <ul class="dropdown-menu">
+						          </ul>
+						        </div>
+						      <div class="btn-group">
+						        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
+						          <ul class="dropdown-menu">
+						          <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+						          <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+						          <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+						          </ul>
+						      </div>
+						      <div class="btn-group">
+						        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+						        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+						        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
+						        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+						      </div>
+						      <div class="btn-group">
+						        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
+						        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
+						        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+						        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+						      </div>
+						      <div class="btn-group">
+						        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+						        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+						        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
+						        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
+						      </div>
+						      <div class="btn-group">
+								  	<a class="btn dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu" title="Hyperlink"><i class="icon-link"></i></a>
+								    <div class="dropdown-menu input-append">
+									    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
+									    <button class="btn" type="button">Add</button>
+						        	</div>
+						        	<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
+						      </div>
+						      
+						      <div class="btn-group">
+						        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
+						        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+						      </div>
+						      <div class="btn-group">
+						        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+						        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+						      </div>
+						      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
+						    </div>
+							<div class="editor" id="editor">
+								Test
+							</div>
+						</div>
+					</div>
+					</fieldset>
+					</form>
+				</div>
+	          
+
 	          <div class="tab-pane" id="c">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
 	          <div class="tab-pane" id="d">DDDDDSecondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
 	          <div class="tab-pane" id="e">EEEEEThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
@@ -101,6 +246,7 @@ margin-right: 0;
 border: 0;
 background-color: #333;
 border-radius: 0;
+color: #fff;
 }
 .nav-tabs li a:hover {
 background-color: #444; }
@@ -118,7 +264,8 @@ margin-left: 45px; }
 display: none;
 background-color: #fff;
 padding: 1.6rem;
-overflow-y: auto; }
+overflow-y: auto;
+height: 650px; }
 .tab-content .active {
 display: block; }
 
@@ -128,6 +275,71 @@ width: 100%; }
 height: 50px; }
 .list-group .list-group-item h4, .list-group .list-group-item span {
 line-height: 11px; }
+.icon {
+	margin-right: 10px;
+	width: 25px
+}
+.form-inline .form-group label.control-label {
+	display: block;
+}
+.form-inline .form-control {
+	width: 100%;
+	padding: 15px 10px;
+}
+.help-block {
+	display: none;
+}
 
+.row {
+	margin-bottom: 10px;
+}
+textarea {
+	resize: none;
+}
+.tabs-left>.nav-tabs {
+	margin-right: 0;
+}
+
+.tabs-left>.nav-tabs>li>a {
+	margin: 0;
+	border-radius: 0px;
+}
+
+#editor {  
+	overflow: scroll;
+  max-height: 300px;
+  height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	padding: 15px 10px;
+}
+
+.btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
+	padding: 5px 10px;
+}
+.dropdown-menu.input-append {
+	display: none;
+}
+.open .dropdown-menu.input-append {
+	display: block;
+ }
 </style>
+<script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="assets/js/mainController.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.standalone.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker3.min.css">
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.dob').datepicker();
+		$('#startEducation').datepicker();
+		$('#endEducation').datepicker();
+		$('#editor').wysiwyg();
+	});
+</script>
 </html>
