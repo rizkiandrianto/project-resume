@@ -115,102 +115,114 @@
 	            <!-- Tab Name -->
 				<legend>Education</legend>
 
-				<form class="form-inline">
-				<fieldset>
+				<div class="panel panel-default">
+			        <div class="panel-heading" role="tab" id="headingOne">
+			          <h4 class="panel-title" id="-collapsible-group-item-#1-">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+			              Collapsible Group Item #1
+			            </a>
+			          <a class="anchorjs-link" href="#-collapsible-group-item-#1-"><span class="anchorjs-icon"></span></a></h4>
+			        </div>
+			        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+			          <div class="panel-body">
+			            <form class="form-inline">
+						<fieldset>
+						<div class="col-md-12">
+							<div class="row">
+								<!-- Text input-->
+								<div class="form-group col-md-5">
+								  <label class="control-label" for="education">Educational Institution</label>  
+								  <input id="education" name="education" type="text" class="form-control input-md">
+								  <span class="help-block">help</span>  
+								</div>
 
-				<div class="col-md-12">
-					<div class="row">
-						<!-- Text input-->
-						<div class="form-group col-md-5">
-						  <label class="control-label" for="education">Educational Institution</label>  
-						  <input id="education" name="education" type="text" class="form-control input-md">
-						  <span class="help-block">help</span>  
-						</div>
-
-						<!-- Text input-->
-						<div class="form-group col-md-5">
-						  <label class="control-label" for="major">Major of</label>  
-						  <input id="major" name="major" type="text" class="form-control input-md">
-						  <span class="help-block">help</span>  
-						</div>
-					</div>
-
-					<div class="row">
-						<!-- Text input-->
-						<div class="form-group col-md-5">
-						  <label class="control-label" for="startEducation">Start date</label>  
-						  <input id="startEducation" name="startEducation" type="text" placeholder="Place" class="form-control input-md">
-						  <span class="help-block">help</span>  
-						</div>
-
-						<!-- Text input-->
-						<div class="form-group col-md-5">
-						  <label class="control-label" for="endEducation">End Date</label>  
-						  <input id="endEducation" name="endEducation" type="text" class="form-control input-md">
-						  <span class="help-block">help</span> 
-						</div>
-					</div>
-
-					<div class="row" style="margin-top:20px;">
-						<label class="control-label" style="padding-left:15px;">Description</label><br>
-						<div class="editor col-md-10">
-							<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
-						      <div class="btn-group">
-						        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
-						          <ul class="dropdown-menu">
-						          </ul>
-						        </div>
-						      <div class="btn-group">
-						        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
-						          <ul class="dropdown-menu">
-						          <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
-						          <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
-						          <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
-						          </ul>
-						      </div>
-						      <div class="btn-group">
-						        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
-						        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
-						        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
-						        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
-						      </div>
-						      <div class="btn-group">
-						        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
-						        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
-						        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
-						        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
-						      </div>
-						      <div class="btn-group">
-						        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
-						        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
-						        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
-						        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
-						      </div>
-						      <div class="btn-group">
-								  	<a class="btn dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu" title="Hyperlink"><i class="icon-link"></i></a>
-								    <div class="dropdown-menu input-append">
-									    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
-									    <button class="btn" type="button">Add</button>
-						        	</div>
-						        	<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
-						      </div>
-						      
-						      <div class="btn-group">
-						        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
-						        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
-						      </div>
-						      <div class="btn-group">
-						        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
-						        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
-						      </div>
-						      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display:none">
-						    </div>
-							<div class="editor" id="editor">
+								<!-- Text input-->
+								<div class="form-group col-md-5">
+								  <label class="control-label" for="major">Major of</label>  
+								  <input id="major" name="major" type="text" class="form-control input-md">
+								  <span class="help-block">help</span>  
+								</div>
 							</div>
-						</div>
-					</div>
-					</fieldset>
-					</form>
+
+							<div class="row">
+								<!-- Text input-->
+								<div class="form-group col-md-5">
+								  <label class="control-label" for="startEducation">Start date</label>  
+								  <input id="startEducation" name="startEducation" type="text" placeholder="Place" class="form-control input-md">
+								  <span class="help-block">help</span>  
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group col-md-5">
+								  <label class="control-label" for="endEducation">End Date</label>  
+								  <input id="endEducation" name="endEducation" type="text" class="form-control input-md">
+								  <span class="help-block">help</span> 
+								</div>
+							</div>
+
+							<div class="row" style="margin-top:20px;">
+								<label class="control-label" style="padding-left:15px;">Description</label><br>
+								<div class="editor col-md-10">
+									<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+								      <div class="btn-group">
+								        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
+								          <ul class="dropdown-menu">
+								          </ul>
+								        </div>
+								      <div class="btn-group">
+								        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
+								          <ul class="dropdown-menu">
+								          <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+								          <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+								          <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+								          </ul>
+								      </div>
+								      <div class="btn-group">
+								        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+								        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+								        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
+								        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+								      </div>
+								      <div class="btn-group">
+								        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
+								        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
+								        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+								        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+								      </div>
+								      <div class="btn-group">
+								        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+								        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+								        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
+								        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
+								      </div>
+								      <div class="btn-group">
+										  	<a class="btn dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu" title="Hyperlink"><i class="icon-link"></i></a>
+										    <div class="dropdown-menu input-append">
+											    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
+											    <button class="btn" type="button">Add</button>
+								        	</div>
+								        	<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
+								      </div>
+								      
+								      <div class="btn-group">
+								        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
+								        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+								      </div>
+								      <div class="btn-group">
+								        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+								        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+								      </div>
+								      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display:none">
+								    </div>
+									<div class="editor" id="editor">
+									</div>
+								</div>
+							</div>
+							</fieldset>
+							</form>
+			          </div>
+			        </div>
+			      </div>
 				</div>
 	          
 
@@ -337,9 +349,12 @@
 						</div>
 						<div class="form-group col-md-5">
 						  <label class="control-label" for="skillName" style="margin-bottom:0px">Rate Your Skill</label>  
-						  <input id="input-21a" value="0" type="number" class="rating" data-symbol="&#xf111;" min=0 max=5 step=0.5 data-size="xs" data-glyphicon="false" data-rating-class="rating-fa" >  
+						  <input id="input-21a" value="0" type="number" class="rating" data-symbol="&#xf005;" min=0 max=5 step=0.5 data-size="xs" data-glyphicon="false" data-rating-class="rating-fa">  
 						</div>
 					</div>
+				</div>
+				<div class="col-md-12">
+					<div></div>
 				</div>
 	          </div>
 	          <div class="tab-pane" id="e">EEEEEThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
@@ -393,7 +408,8 @@ display: none;
 background-color: #fff;
 padding: 1.6rem;
 overflow-y: auto;
-height: 650px; }
+min-height: 650px;
+height: auto; }
 .tab-content .active {
 display: block; }
 
