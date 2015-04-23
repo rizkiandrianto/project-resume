@@ -118,222 +118,215 @@
 				<legend>Education</legend>
 				<form class="form-inline">
 					<fieldset>
-					<div class="col-md-12">
-						<div class="row">
-							<!-- Text input-->
-							<div class="form-group col-md-5">
-							  <label class="control-label" for="education">Educational Institution</label>  
-							  <input id="education" name="education" type="text" class="form-control input-md">
-							  <span class="help-block">help</span>  
-							</div>
+						<div id="accordion1" class="accordion">
+							<div class="group">
+								<h3>Section 1</h3>
+								<div class="accContain">
+									<div class="col-md-12">
+										<div class="row">
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="education">Educational Institution</label>  
+											  <input id="education" name="education" type="text" class="form-control input-md">
+											  <span class="help-block">help</span>  
+											</div>
 
-							<!-- Text input-->
-							<div class="form-group col-md-5">
-							  <label class="control-label" for="major">Major of</label>  
-							  <input id="major" name="major" type="text" class="form-control input-md">
-							  <span class="help-block">help</span>  
-							</div>
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="major">Major of</label>  
+											  <input id="major" name="major" type="text" class="form-control input-md">
+											  <span class="help-block">help</span>  
+											</div>
+										</div><!--row-->
+
+										<div class="row">
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="startEducation">Start date</label>  
+											  <input id="startEducation" name="startEducation" type="text" placeholder="Place" class="form-control input-md">
+											  <span class="help-block">help</span>  
+											</div>
+
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="endEducation">End Date</label>  
+											  <input id="endEducation" name="endEducation" type="text" class="form-control input-md">
+											  <span class="help-block">help</span> 
+											</div>
+										</div><!--row-->
+
+										<div class="row" style="margin-top:20px;">
+											<label class="control-label" style="padding-left:15px;">Description</label><br>
+											<div class="col-md-10">
+												<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+											      <div class="btn-group">
+											        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
+											          <ul class="dropdown-menu">
+											          </ul>
+											        </div>
+											      <div class="btn-group">
+											        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
+											          <ul class="dropdown-menu">
+											          <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+											          <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+											          <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+											          </ul>
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+											        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+											        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
+											        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
+											        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
+											        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+											        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+											        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+											        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
+											        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
+											      </div>
+											      <div class="btn-group">
+													  	<a class="btn dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu" title="Hyperlink"><i class="icon-link"></i></a>
+													    <div class="dropdown-menu input-append">
+														    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
+														    <button class="btn" type="button">Add</button>
+											        	</div>
+											        	<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
+											      </div>
+											      
+											      <div class="btn-group">
+											        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
+											        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+											        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+											      </div>
+											      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display:none">
+											    </div>
+												<div class="editor" id="editor">
+												</div>
+											</div><!-- editor / col-md-10-->
+										</div><!--row-->
+									</div><!-- col-md-12 -->
+								</div><!-- accContain -->
+							</div><!-- group -->
+						</div><!-- accordion -->
+						<div class="col-md-12 adder" id="addedu">
+							<i class="fa fa-plus-circle"></i> Add More Education Fields
 						</div>
-
-						<div class="row">
-							<!-- Text input-->
-							<div class="form-group col-md-5">
-							  <label class="control-label" for="startEducation">Start date</label>  
-							  <input id="startEducation" name="startEducation" type="text" placeholder="Place" class="form-control input-md">
-							  <span class="help-block">help</span>  
-							</div>
-
-							<!-- Text input-->
-							<div class="form-group col-md-5">
-							  <label class="control-label" for="endEducation">End Date</label>  
-							  <input id="endEducation" name="endEducation" type="text" class="form-control input-md">
-							  <span class="help-block">help</span> 
-							</div>
-						</div>
-
-						<div class="row" style="margin-top:20px;">
-							<label class="control-label" style="padding-left:15px;">Description</label><br>
-							<div class="editor col-md-10">
-								<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
-							      <div class="btn-group">
-							        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
-							          <ul class="dropdown-menu">
-							          </ul>
-							        </div>
-							      <div class="btn-group">
-							        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
-							          <ul class="dropdown-menu">
-							          <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
-							          <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
-							          <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
-							          </ul>
-							      </div>
-							      <div class="btn-group">
-							        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
-							        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
-							        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
-							        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
-							      </div>
-							      <div class="btn-group">
-							        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
-							        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
-							        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
-							        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
-							      </div>
-							      <div class="btn-group">
-							        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
-							        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
-							        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
-							        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
-							      </div>
-							      <div class="btn-group">
-									  	<a class="btn dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu" title="Hyperlink"><i class="icon-link"></i></a>
-									    <div class="dropdown-menu input-append">
-										    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
-										    <button class="btn" type="button">Add</button>
-							        	</div>
-							        	<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
-							      </div>
-							      
-							      <div class="btn-group">
-							        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
-							        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
-							      </div>
-							      <div class="btn-group">
-							        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
-							        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
-							      </div>
-							      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display:none">
-							    </div>
-								<div class="editor" id="editor">
-								</div>
-							</div>
-						</div>
-						</fieldset>
-					</form>
+					</fieldset>
+				</form>
 			  </div><!-- Tab Pane b -->
 	          
 	          <div class="tab-pane" id="c">
 	          	<!-- Tab Name -->
 				<legend>Work Experience</legend>
-				<div id="accordion">
+				<div id="accordion2" class="accordion">
 					<div class="group">
 						<h3>Section 1</h3>
 						<div class="accContain">
 							<form class="form-inline">
-							<fieldset>
+								<fieldset>
+									<div class="col-md-12">
+										<div class="row">
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="education">Company Name</label>  
+											  <input id="education" name="education" type="text" class="form-control input-md">
+											  <span class="help-block">help</span>  
+											</div>
 
-							<div class="col-md-12">
-								<div class="row">
-									<!-- Text input-->
-									<div class="form-group col-md-5">
-									  <label class="control-label" for="education">Company Name</label>  
-									  <input id="education" name="education" type="text" class="form-control input-md">
-									  <span class="help-block">help</span>  
-									</div>
-
-									<!-- Text input-->
-									<div class="form-group col-md-5">
-									  <label class="control-label" for="major">Job Title</label>  
-									  <input id="major" name="major" type="text" class="form-control input-md">
-									  <span class="help-block">help</span>  
-									</div>
-								</div>
-
-								<div class="row">
-									<!-- Text input-->
-									<div class="form-group col-md-5">
-									  <label class="control-label" for="startJob">Start date</label>  
-									  <input id="startJob" name="startJob" type="text" placeholder="Place" class="form-control input-md">
-									  <span class="help-block">help</span>  
-									</div>
-
-									<!-- Text input-->
-									<div class="form-group col-md-5">
-									  <label class="control-label" for="endJob">End Date</label>  
-									  <input id="endJob" name="endJob" type="text" class="form-control input-md">
-									  <span class="help-block">help</span> 
-									</div>
-								</div>
-
-								<div class="row" style="margin-top:20px;">
-									<label class="control-label" style="padding-left:15px;">Description</label><br>
-									<div class="editor col-md-10">
-										<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
-									      <div class="btn-group">
-									        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
-									          <ul class="dropdown-menu">
-									          </ul>
-									        </div>
-									      <div class="btn-group">
-									        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
-									          <ul class="dropdown-menu">
-									          <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
-									          <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
-									          <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
-									          </ul>
-									      </div>
-									      <div class="btn-group">
-									        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
-									        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
-									        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
-									        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
-									      </div>
-									      <div class="btn-group">
-									        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
-									        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
-									        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
-									        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
-									      </div>
-									      <div class="btn-group">
-									        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
-									        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
-									        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
-									        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
-									      </div>
-									      <div class="btn-group">
-											  	<a class="btn dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu" title="Hyperlink"><i class="icon-link"></i></a>
-											    <div class="dropdown-menu input-append">
-												    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
-												    <button class="btn" type="button">Add</button>
-									        	</div>
-									        	<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
-									      </div>
-									      
-									      <div class="btn-group">
-									        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
-									        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
-									      </div>
-									      <div class="btn-group">
-									        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
-									        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
-									      </div>
-									      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display:none">
-									    </div>
-										<div class="editor" id="editor">
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="major">Job Title</label>  
+											  <input id="major" name="major" type="text" class="form-control input-md">
+											  <span class="help-block">help</span>  
+											</div>
 										</div>
-									</div>
-								</div>
+
+										<div class="row">
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="startJob">Start date</label>  
+											  <input id="startJob" name="startJob" type="text" placeholder="Place" class="form-control input-md">
+											  <span class="help-block">help</span>  
+											</div>
+
+											<!-- Text input-->
+											<div class="form-group col-md-5">
+											  <label class="control-label" for="endJob">End Date</label>  
+											  <input id="endJob" name="endJob" type="text" class="form-control input-md">
+											  <span class="help-block">help</span> 
+											</div>
+										</div>
+
+										<div class="row" style="margin-top:20px;">
+											<label class="control-label" style="padding-left:15px;">Description</label><br>
+											<div class="editor col-md-10">
+												<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+											      <div class="btn-group">
+											        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
+											          <ul class="dropdown-menu">
+											          </ul>
+											        </div>
+											      <div class="btn-group">
+											        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
+											          <ul class="dropdown-menu">
+											          <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+											          <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+											          <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+											          </ul>
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+											        <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+											        <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
+											        <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
+											        <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
+											        <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
+											        <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
+											        <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
+											        <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
+											        <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
+											      </div>
+											      <div class="btn-group">
+													  	<a class="btn dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu" title="Hyperlink"><i class="icon-link"></i></a>
+													    <div class="dropdown-menu input-append">
+														    <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
+														    <button class="btn" type="button">Add</button>
+											        	</div>
+											        	<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
+											      </div>
+											      
+											      <div class="btn-group">
+											        <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
+											        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+											      </div>
+											      <div class="btn-group">
+											        <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+											        <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+											      </div>
+											      <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display:none">
+											    </div>
+												<div class="simpleTextEditor" id="editor">
+												</div>
+											</div><!-- editor.col-md-10 -->
+										</div><!-- row -->
+									</div><!-- col-md-12 -->
 								</fieldset>
-								</form>
-						</div><!-- accContain -->
-					</div><!-- group -->
-					<div class="group">
-						<h3>Section 2</h3>
-						<div class="accContain">
-							<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
-						</div><!-- accContain -->
-					</div>
-					<div class="group">
-						<h3>Section 3</h3>
-						<div class="accContain">
-							<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-						</div><!-- accContain -->
-					</div><!-- group -->
-					<div class="group">
-						<h3>Section 4</h3>
-						<div class="accContain">
-							<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+							</form>
 						</div><!-- accContain -->
 					</div><!-- group -->
 				</div><!-- accordion -->
@@ -344,31 +337,41 @@
 	          <div class="tab-pane" id="d">
 	          	<!-- Tab Name -->
 				<legend>Skills</legend>
-
-				<div class="col-md-12">
-					<div class="row">
-						<!-- Text input-->
-						<div class="form-group col-md-5">
-						  <label class="control-label" for="skillGroup">Skill Group</label>  
-						  <input id="skillGroup" name="skillGroup" type="text" class="form-control input-md">
-						  <span class="help-block" style="display:block">for example: Programming Language</span>  
-						</div>
-					</div>
-					<div class="row">
-						<!-- Text input-->
-						<div class="form-group col-md-5">
-						  <label class="control-label" for="skillName">Skill Name</label>  
-						  <input id="skillName" name="skillName" type="text" class="form-control input-md">
-						  <span class="help-block" style="display:block">for example: PHP</span>  
-						</div>
-						<div class="form-group col-md-5">
-						  <label class="control-label" for="skillName" style="margin-bottom:0px">Rate Your Skill</label>  
-						  <input id="input-21a" value="0" type="number" class="rating" data-symbol="&#xf005;" min=0 max=5 step=0.5 data-size="xs" data-glyphicon="false" data-rating-class="rating-fa">  
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div></div>
+				<div id="accordion3" class="accordion">
+					<div class="group">
+						<h3>Skill Group 1</h3>
+						<div class="accContain">
+							<div class="col-md-12 groupskillRow">
+								<div class="row">
+									<!-- Text input-->
+									<div class="form-group col-md-5">
+									  <label class="control-label" for="skillGroup">Skill Group</label>  
+									  <input id="skillGroup" name="skillGroup" type="text" class="form-control input-md">
+									  <span class="help-block" style="display:block">for example: Programming Language</span>  
+									</div>
+								</div>
+								<div class="row skillRow">
+									<!-- Text input-->
+									<div class="form-group col-md-5">
+									  <label class="control-label" for="skillName">Skill Name</label>  
+									  <input id="skillName" name="skillName" type="text" class="form-control input-md">
+									  <span class="help-block" style="display:block">for example: PHP</span>  
+									</div><!-- col-md-5 -->
+									<div class="form-group col-md-5">
+									  <label class="control-label" for="skillName" style="margin-bottom:0px">Rate Your Skill</label>  
+									  <input id="input-21a" value="0" type="number" class="rating" data-symbol="&#xf005;" min=0 max=5 step=0.5 data-size="xs" data-glyphicon="false" data-rating-class="rating-fa">  
+									</div><!-- col-md-5 -->
+									<div class="col-md-2">
+										<i class="fa fa-plus-circle addSkillSign" data-toggle="tooltip" data-placement="bottom" title="Add More Skill"></i>
+										<i class="fa fa-minus-circle removeSkillSign" data-toggle="tooltip" data-placement="bottom" title="Remove This Skill"></i>
+									</div>
+								</div><!-- row -->
+							</div><!-- col-md-12 -->
+						</div><!-- accContain -->
+					</div><!-- group -->
+				</div><!-- accordion -->
+				<div class="col-md-12 adder" id="addskill">
+					<i class="fa fa-plus-circle"></i> Add More Skill Group
 				</div>
 	          </div>
 	          <div class="tab-pane" id="e">EEEEEThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
@@ -398,7 +401,6 @@
 </div>
 
 
-
 </body>
 <style type="text/css">
 body {
@@ -407,6 +409,13 @@ background-color: #ddd; }
 h3 {
 margin-top: 0; }
 
+a {
+	cursor: pointer;
+}
+
+button {
+background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1)
+}
 .badge {
 background-color: #777; }
 
@@ -516,7 +525,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
 html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
-
+/* -- */
 
 .adder {
 	border: 3px dashed #999;
@@ -525,6 +534,12 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 	padding: 20px;
 	cursor: pointer;
 	text-align: center;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.adder i {
+	margin-right: 5px;
 }
 
 .modal {
@@ -548,6 +563,82 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 .pad-none {
 	padding: 0;
 }
+
+.addSkillSign {
+	color: #009688;
+	font-size: 36px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.removeSkillSign {
+	color: #F44336;
+	font-size: 36px;
+	margin-top: 20px;
+	cursor: pointer;	
+}
+/* jQuery UI overide */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: none;
+  background:#009688;
+  color: #fff;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: none;
+  background: #009688;
+  color: #fff;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 2px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 2px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 2px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-bottom-left-radius: 2px;
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 0.8em 5em 0.8em 2em;
+}
+
+.accContain {
+	border: none;
+}
+
+.ui-state-active .ui-icon, .ui-state-default .ui-icon {
+  background-image: url(http://download.jqueryui.com/themeroller/images/ui-icons_eeeeee_256x240.png);
+}
+
+.ui-state-active {
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.ui-widget {
+	font-family: 'Corbel-Reguler';
+}
+
+.accordion {
+	  border-radius: 2px;
+	  border: 0;
+	  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+}
+/*--- */
+
+/* Overide Bootstrap */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Corbel-Reguler';
+	font-weight: bolder;
+}
+
 </style>
 <script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
 
@@ -561,15 +652,27 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 		$('.dob').datepicker();
 		$('#startEducation').datepicker();
 		$('#endEducation').datepicker();
-		$('#editor').wysiwyg();
+		$('.simpleTextEditor').wysiwyg();
 
 		$('#rating-input').on('rating.change', function() {
             alert($('#rating-input').val());
         });
 
-        $('#addjob').click(function(){
-        	$('.group:first-child').clone(true, true).find('input').val("").end().appendTo('#accordion');
+        $('#addjob, #addedu, #addskill').click(function(){
+        	$(this).parents(".tab-pane").find('.accordion .group:first-child').clone(true, true).find('input').val("").end().appendTo($(this).parents(".tab-pane").find('.accordion'));
         });
+
+        $('.addSkillSign').click(function(){
+        	var thisParents = $(this).parents(".skillRow");
+        	thisParents.clone(true, true).find('input').val("").end().find('.rating').rating('clear').end().appendTo(".groupskillRow");
+
+        });
+
+        $('.removeSkillSign').click(function(){
+        	$(this).parents(".skillRow").remove();
+        });
+
+        
 	});
 </script>
 <script type="text/javascript">
@@ -577,7 +680,7 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
     var active = false,
         sorting = false;
     
-    $( "#accordion" )
+    $( ".accordion" )
     .accordion({
         header: "> div > h3",
         collapsible: true,
