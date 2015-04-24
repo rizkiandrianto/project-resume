@@ -13,137 +13,446 @@
 
 body {
 	font-family: 'Corbel-Reguler';
+    background-color: #ddd;
 }
 
-.h1FullName {
-	font-family: 'Corbel-Bold';
-	text-decoration: underline;
+
+/* ===================================================
+            ********** RESET **********
+====================================================== */
+
+h3 {
+margin-top: 0; }
+
+a {
+    cursor: pointer;
 }
 
-.titleA01 {
-	text-align: right;
-	font-family: 'Corbel-Reguler';
-	font-weight: bold;
+button {
+    background-color: #009688;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.28s;
+    transition-property: background-color, box-shadow;
 }
 
-.firstSection {
-	margin: 20px auto 50px;
+textarea {
+    resize: none;
 }
 
-.leftFirstSection {
-	padding-left: 50px;
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    padding: 15px 10px;
 }
 
-.rightFirstSection {
-	padding-right: 50px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corbel-Reguler';
+    font-weight: bolder;
 }
 
-.leftTitleRotate {
-	/* Safari */
-	-webkit-transform: rotate(-90deg);
-
-	/* Firefox */
-	-moz-transform: rotate(-90deg);
-
-	/* IE */
-	-ms-transform: rotate(-90deg);
-
-	/* Opera */
-	-o-transform: rotate(-90deg);
-	white-space: nowrap;
-	writing-mode: bt-rl;
-	text-indent: -3em;
-
-    padding: 0px 0px 0px 0px;
-    margin: 0px;
-    text-align: left;
-    vertical-align: top;
-}
-
-.titleB01 {
-	margin-left: 25px;
-	font-weight: bold;
-}
-
-.section {
-	width: 100%;
-  	height: auto;
-  	display: block;
-  	/* margin-top: -2px; */
-}
-
-.fa-ul.col-md-8, .fa-ul.skill {
-	border-left: 1px dashed #000;
-  	padding: 0px 14.5px;
-  	margin-left: 10px;
-}
-
-.rightSection {
-	border-left: 1px dashed #000;
-}
-
-.rightSection .section {
-	margin-left:-25px;
-}
-
-.rightSection .section .fa-ul.skill {
-	border-left:none;
-}
-
-.fa-ul.skill li i{
-	background: white;
-}
+/* ============== for CV & preview Page ============== */
 
 .progressBar {
-	list-style: none;
+    list-style: none;
   width: 100%;
   padding-left: 2%;
 }
 
 .progressBar li {
-	height: 1em;
-	width: 6%;
-	margin-right: 2px;
-	background: rgba(57,73,89,0.2);
-	-webkit-transform: skewX(-20deg);
-	display: inline-block;
-
+    height: 1em;
+    width: 6%;
+    margin-right: 2px;
+    background: rgba(57,73,89,0.2);
+    -webkit-transform: skewX(-20deg);
+    display: inline-block;
 }
 
 .progressBar li.filled {
-	background: rgba(57,73,89,1);
+    background: rgba(57,73,89,1);
 }
 
-#sidebar-small {
-    width: 40px;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
+.container.document {
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 5px #ddd;
+    padding: 50px;
+    background: #fff;
+}
+section.section {
+    clear: both;
+    margin-top: 0px;
+}
+section.section:not(:first-of-type) {
+    margin-top: 30px;
 }
 
-#open_nav {
-    white-space:nowrap;
-    font-family: 'Exo', sans-serif;
-    font-weight: 300;
-    font-size: 1em;
+.mainName {
+    display: inline;
+    float: right;
+    margin-bottom: -30px;
+}
+section.section .row {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+}
+
+section.section .row h2.sectionTitle {
+    display: inline;
+    border-bottom: 2px solid #222;
+}
+
+ul.mainContact li {
+    list-style: none;
+
+}
+img.profPic {
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0px 0px 5px #ddd;
+    box-shadow: 0px 0px 5px #ddd;
+}
+.pad-l-n {
+    padding-left: 0;
+}
+
+.pad-r-n {
+    padding-right: 0;
+}
+
+.contactData {
+    padding-left: 5px
+}
+.contactData:after {
+    content: '';
+    clear: both;
+}
+.mainContactDiv {
+    padding-top: 20px;
+}
+.mainContactDiv:after {
+    content: '';
+    clear: both;
+}
+.left {
+    padding-left: 0px;
+    margin-top: 30px;
+}
+.right {
+    margin-top: 30px;
+}
+.sectionPerTitle {
+    margin-top: 3px;
+}
+.sectionList {
+    padding-left: 0
+}
+.sectionList li {
+    list-style: none;
+    clear: both;
+}
+.row {
+    margin: 0
+}
+.fa-ul.skill li i{
+    display: none;
+}
+.fa-ul.skill {
+    border-left: none;
+    padding: 0px 0px;
+    margin-left: 0px;
+}
+
+/* =======================================================================================
+
+                        ***********  FORMULIR PAGE ***********
+
+========================================================================================== */
+
+.list-group {
+width: 100%; }
+.list-group .list-group-item {
+height: 50px; }
+.list-group .list-group-item h4, .list-group .list-group-item span {
+line-height: 11px; }
+.icon {
+    margin-right: 10px;
+    width: 25px;
+    text-align: center;
+}
+.form-inline .form-group label.control-label {
     display: block;
-    color: #333333;
-    text-decoration: none;
-    background: url("img/menu-s.png") no-repeat 18px -30px transparent;
-    padding-left: 50px;
-    padding-right: 19px;
-    line-height: 40px;
-    position: absolute;
-    bottom: 18px;
-    -webkit-transform: rotate(-90deg);
-    -webkit-transform-origin: 20px;
-    -moz-transform: rotate(-90deg);
-    -moz-transform-origin: 20px;
-    -ms-transform: rotate(-90deg);
-    -ms-transform-origin: 20px;
-    -o-transform: rotate(-90deg);
-    -o-transform-origin: 20px;
-    transform: rotate(-90deg);
-    transform-origin: 20px;
 }
+.form-inline .form-control {
+    width: 100%;
+    padding: 15px 10px;
+}
+.help-block {
+    display: none;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.tabs-left>.nav-tabs {
+    margin-right: 0;
+}
+
+.tabs-left>.nav-tabs>li>a {
+    margin: 0;
+    border-radius: 0px;
+}
+
+#editor {  
+    overflow: scroll;
+  max-height: 300px;
+  height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.rating-container .rating-stars {
+    color: #019587;
+ }
+
+.adder {
+    border: 3px dashed #999;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.adder i {
+    margin-right: 5px;
+}
+
+.pad-none {
+    padding: 0;
+}
+
+.addSkillSign {
+    color: #009688;
+    font-size: 36px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.removeSkillSign {
+    color: #F44336;
+    font-size: 36px;
+    margin-top: 20px;
+    cursor: pointer;    
+}
+
+.removeSkillSign.list {
+    margin-top: 0px;
+}
+
+ /* ============== Sortable ============ */
+ .group { zoom: 1 }
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+/* ------ END of Sortable */
+
+/* ===================== Tab Style ================== */
+.badge {
+background-color: #777; }
+
+.tabs-left {
+margin-top: 3rem; }
+
+.nav-tabs {
+float: left;
+border-bottom: 0; }
+.nav-tabs li {
+float: none;
+margin: 0; }
+.nav-tabs li a {
+margin-right: 0;
+border: 0;
+background-color: #333;
+border-radius: 0;
+color: #fff;
+}
+.nav-tabs li a:hover {
+background-color: #444; }
+.nav-tabs .glyphicon {
+color: #fff; }
+.nav-tabs .active .glyphicon {
+color: #333; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+border: 0; }
+
+.tab-content {
+margin-left: 45px; }
+.tab-content .tab-pane {
+display: none;
+background-color: #fff;
+padding: 1.6rem;
+overflow-y: auto;
+min-height: 650px;
+height: auto; }
+.tab-content .active {
+display: block; }
+/* ---------- END of Tab Style */
+
+/* ====== Bootstrap Overide ========== */
+.btn {
+  position: relative;
+  padding: 8px 15px;
+  border: 0;
+  margin: 10px 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow:hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255,255,255,.84);
+  transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+  outline: none!important;
+  text-align:center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index:0;
+}
+
+.btn-primary:not(.btn-link):not(.btn-flat) {
+  background-color: #009688;
+  color: rgba(255,255,255,.84);
+  transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+}
+
+.btn:hover:not(.btn-link):not(.btn-flat):not(.btn-fab) {
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+  transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+}
+
+.btn:active:not(.btn-link):not(.btn-flat):not(.btn-fab) {
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+  transition: background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1);
+}
+
+.btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
+    padding: 5px 10px;
+}
+.dropdown-menu.input-append {
+    display: none;
+}
+.open .dropdown-menu.input-append {
+    display: block;
+ }
+ .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  margin: 0 auto;
+  width: auto;
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*--------- END of Bootstrap Overide ---*/
+
+/* ======== Material Design =========*/
+.ink {
+  display: block;
+  position: absolute;
+  background:rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  -webkit-transform:scale(0);
+     -moz-transform:scale(0);
+       -o-transform:scale(0);
+          transform:scale(0);
+}
+
+.animate {
+    -webkit-animation:ripple 0.65s linear;
+   -moz-animation:ripple 0.65s linear;
+    -ms-animation:ripple 0.65s linear;
+     -o-animation:ripple 0.65s linear;
+        animation:ripple 0.65s linear;
+}
+
+@-webkit-keyframes ripple {
+    100% {opacity: 0; -webkit-transform: scale(2.5);}
+}
+@-moz-keyframes ripple {
+    100% {opacity: 0; -moz-transform: scale(2.5);}
+}
+@-o-keyframes ripple {
+    100% {opacity: 0; -o-transform: scale(2.5);}
+}
+@keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);}
+}
+
+/*--- END of Material Design */
+
+/* ================ jQuery UI overide =============== */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: none;
+  background:#009688;
+  color: #fff;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: none;
+  background: #009688;
+  color: #fff;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 2px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 2px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 2px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-bottom-left-radius: 2px;
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 0.8em 1em 0.8em 2em;
+}
+.accContain {
+    border: none;
+}
+
+.ui-state-active .ui-icon, .ui-state-default .ui-icon {
+  background-image: url(http://download.jqueryui.com/themeroller/images/ui-icons_eeeeee_256x240.png);
+}
+.ui-state-active {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.ui-widget {
+    font-family: 'Corbel-Reguler';
+}
+.accordion {
+      border-radius: 2px;
+      border: 0;
+      box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+}
+/*--- END of JQuery UI Overide */

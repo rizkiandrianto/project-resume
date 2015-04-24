@@ -15,9 +15,12 @@
 	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/star-rating.min.css">
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker3.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<div class="container">
@@ -111,7 +114,7 @@
 				</fieldset>
 				</form>
 
-	          </div>
+	          </div><!-- tab-pane first -->
 
 	          <div class="tab-pane" id="b">
 	            <!-- Tab Name -->
@@ -120,7 +123,7 @@
 					<fieldset>
 						<div id="accordion1" class="accordion">
 							<div class="group">
-								<h3>Section 1</h3>
+								<h3>Section 1 <span class="pull-right"><i class="fa fa-close removeAccGroup"></i></span></h3>
 								<div class="accContain">
 									<div class="col-md-12">
 										<div class="row">
@@ -157,7 +160,7 @@
 
 										<div class="row" style="margin-top:20px;">
 											<label class="control-label" style="padding-left:15px;">Description</label><br>
-											<div class="col-md-10">
+											<div class="col-md-11">
 												<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
 											      <div class="btn-group">
 											        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
@@ -229,7 +232,7 @@
 				<legend>Work Experience</legend>
 				<div id="accordion2" class="accordion">
 					<div class="group">
-						<h3>Section 1</h3>
+						<h3>Section 1 <span class="pull-right"><i class="fa fa-close removeAccGroup"></i></span></h3>
 						<div class="accContain">
 							<form class="form-inline">
 								<fieldset>
@@ -268,7 +271,7 @@
 
 										<div class="row" style="margin-top:20px;">
 											<label class="control-label" style="padding-left:15px;">Description</label><br>
-											<div class="editor col-md-10">
+											<div class="editor col-md-11">
 												<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
 											      <div class="btn-group">
 											        <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
@@ -339,7 +342,7 @@
 				<legend>Skills</legend>
 				<div id="accordion3" class="accordion">
 					<div class="group">
-						<h3>Skill Group 1</h3>
+						<h3>Skill Group 1 <span class="pull-right"><i class="fa fa-close removeAccGroup"></i></span></h3>
 						<div class="accContain">
 							<div class="col-md-12 groupskillRow">
 								<div class="row">
@@ -366,6 +369,18 @@
 										<i class="fa fa-minus-circle removeSkillSign" data-toggle="tooltip" data-placement="bottom" title="Remove This Skill"></i>
 									</div>
 								</div><!-- row -->
+								<div class="row skillRow">
+									<!-- Text input-->
+									<div class="form-group col-md-5"> 
+									  <h5>Skill Name</h5>  
+									</div><!-- col-md-5 -->
+									<div class="form-group col-md-5"> 
+									  <input id="input-21a" value="0" type="number" class="rating" data-symbol="&#xf005;" min=0 max=5 step=0.5 data-size="xs" data-glyphicon="false" data-rating-class="rating-fa">  
+									</div><!-- col-md-5 -->
+									<div class="col-md-2">
+										<i class="fa fa-minus-circle removeSkillSign list" data-toggle="tooltip" data-placement="bottom" title="Remove This Skill"></i>
+									</div>
+								</div><!-- row -->
 							</div><!-- col-md-12 -->
 						</div><!-- accContain -->
 					</div><!-- group -->
@@ -376,14 +391,19 @@
 	          </div>
 	          <div class="tab-pane" id="e">EEEEEThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
 	          <div class="tab-pane" id="f">FFFFFFThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+
+	          <div class="col-md-12">
+	          	<button class="btn btn-primary"><i class="fa fa-search"></i> Quick Preview</button>
+	          	<button class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+	          	<button class="btn btn-primary"><i class="fa fa-download"></i> Quick Preview</button>
+	          </div>
 	        </div><!-- /tab-content -->
 	      </div><!-- /tabbable -->
 	    </div><!-- /col -->
 	  </div><!-- /row -->
 	</div><!-- /container -->
-<button data-toggle="modal" data-target="#modalNewGroup">Test</button>
-<!-- Modal Name New Section -->
 
+<!-- Modal Name New Section -->
 <div class="modal fade" id="modalNewGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" style="width:250px">
     <div class="modal-content">
@@ -393,8 +413,11 @@
       		</div>
         	<div class="form-group">
 			    <label for="exampleInputEmail1">Group Name</label>
-			    <input type="text" class="form-control">
-		 	 </div>
+			    <input type="text" class="form-control" id="groupListName">
+		 	</div>
+			<div class="text-center">
+				<button class="btn btn-primary saveAddSection">Save</button>
+			</div>
       </div>
     </div>
   </div>
@@ -402,351 +425,7 @@
 
 
 </body>
-<style type="text/css">
-body {
-background-color: #ddd; }
-
-h3 {
-margin-top: 0; }
-
-a {
-	cursor: pointer;
-}
-
-button {
-background-color .2s ease,box-shadow .28s cubic-bezier(.4,0,.2,1)
-}
-.badge {
-background-color: #777; }
-
-.tabs-left {
-margin-top: 3rem; }
-
-.nav-tabs {
-float: left;
-border-bottom: 0; }
-.nav-tabs li {
-float: none;
-margin: 0; }
-.nav-tabs li a {
-margin-right: 0;
-border: 0;
-background-color: #333;
-border-radius: 0;
-color: #fff;
-}
-.nav-tabs li a:hover {
-background-color: #444; }
-.nav-tabs .glyphicon {
-color: #fff; }
-.nav-tabs .active .glyphicon {
-color: #333; }
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-border: 0; }
-
-.tab-content {
-margin-left: 45px; }
-.tab-content .tab-pane {
-display: none;
-background-color: #fff;
-padding: 1.6rem;
-overflow-y: auto;
-min-height: 650px;
-height: auto; }
-.tab-content .active {
-display: block; }
-
-.list-group {
-width: 100%; }
-.list-group .list-group-item {
-height: 50px; }
-.list-group .list-group-item h4, .list-group .list-group-item span {
-line-height: 11px; }
-.icon {
-	margin-right: 10px;
-	width: 25px
-}
-.form-inline .form-group label.control-label {
-	display: block;
-}
-.form-inline .form-control {
-	width: 100%;
-	padding: 15px 10px;
-}
-.help-block {
-	display: none;
-}
-
-.row {
-	margin-bottom: 10px;
-}
-textarea {
-	resize: none;
-}
-.tabs-left>.nav-tabs {
-	margin-right: 0;
-}
-
-.tabs-left>.nav-tabs>li>a {
-	margin: 0;
-	border-radius: 0px;
-}
-
-#editor {  
-	overflow: scroll;
-  max-height: 300px;
-  height: 300px;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  padding: 15px;}
-
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-	padding: 15px 10px;
-}
-
-.btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
-	padding: 5px 10px;
-}
-.dropdown-menu.input-append {
-	display: none;
-}
-.open .dropdown-menu.input-append {
-	display: block;
- }
-
- .rating-container .rating-stars {
- 	color: #019587;
- }
-
- /* sortable */
- .group { zoom: 1 }
-#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-#sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-html>body #sortable li { height: 1.5em; line-height: 1.2em; }
-.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
-/* -- */
-
-.adder {
-	border: 3px dashed #999;
-	border-radius: 4px;
-	margin: 20px auto;
-	padding: 20px;
-	cursor: pointer;
-	text-align: center;
-	font-weight: bolder;
-	font-size: 16px;
-}
-
-.adder i {
-	margin-right: 5px;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-  margin: 0 auto;
-  width: auto;
-  background: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.pad-none {
-	padding: 0;
-}
-
-.addSkillSign {
-	color: #009688;
-	font-size: 36px;
-	margin-top: 20px;
-	cursor: pointer;
-}
-
-.removeSkillSign {
-	color: #F44336;
-	font-size: 36px;
-	margin-top: 20px;
-	cursor: pointer;	
-}
-/* jQuery UI overide */
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  border: none;
-  background:#009688;
-  color: #fff;
-}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
-  border: none;
-  background: #009688;
-  color: #fff;
-}
-
-.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
-  border-top-right-radius: 2px;
-}
-.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
-  border-top-left-radius: 2px;
-}
-
-.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-  border-bottom-right-radius: 2px;
-}
-.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
-  border-bottom-left-radius: 2px;
-}
-
-.ui-accordion .ui-accordion-header {
-    padding: 0.8em 5em 0.8em 2em;
-}
-
-.accContain {
-	border: none;
-}
-
-.ui-state-active .ui-icon, .ui-state-default .ui-icon {
-  background-image: url(http://download.jqueryui.com/themeroller/images/ui-icons_eeeeee_256x240.png);
-}
-
-.ui-state-active {
-	box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
-	-webkit-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-.ui-widget {
-	font-family: 'Corbel-Reguler';
-}
-
-.accordion {
-	  border-radius: 2px;
-	  border: 0;
-	  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
-}
-/*--- */
-
-/* Overide Bootstrap */
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Corbel-Reguler';
-	font-weight: bolder;
-}
-
-</style>
 <script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
-
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="assets/js/mainController.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.standalone.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker3.min.css">
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('.dob').datepicker();
-		$('#startEducation').datepicker();
-		$('#endEducation').datepicker();
-		$('.simpleTextEditor').wysiwyg();
-
-		$('#rating-input').on('rating.change', function() {
-            alert($('#rating-input').val());
-        });
-
-        $('#addjob, #addedu, #addskill').click(function(){
-        	$(this).parents(".tab-pane").find('.accordion .group:first-child').clone(true, true).find('input').val("").end().appendTo($(this).parents(".tab-pane").find('.accordion'));
-        });
-
-        $('.addSkillSign').click(function(){
-        	var thisParents = $(this).parents(".skillRow");
-        	thisParents.clone(true, true).find('input').val("").end().find('.rating').rating('clear').end().appendTo(".groupskillRow");
-
-        });
-
-        $('.removeSkillSign').click(function(){
-        	$(this).parents(".skillRow").remove();
-        });
-
-        
-	});
-</script>
-<script type="text/javascript">
-	$(function() {
-    var active = false,
-        sorting = false;
-    
-    $( ".accordion" )
-    .accordion({
-        header: "> div > h3",
-        collapsible: true,
-        heightStyle: "content",
-        activate: function( event, ui){
-            //this fixes any problems with sorting if panel was open (remove to see what I am talking about)
-            if(sorting)
-                $(this).sortable("refresh");   
-        },
-        collapsible:true,
-
-	    beforeActivate: function(event, ui) {
-	         // The accordion believes a panel is being opened
-	        if (ui.newHeader[0]) {
-	            var currHeader  = ui.newHeader;
-	            var currContent = currHeader.next('.ui-accordion-content');
-	         // The accordion believes a panel is being closed
-	        } else {
-	            var currHeader  = ui.oldHeader;
-	            var currContent = currHeader.next('.ui-accordion-content');
-	        }
-	         // Since we've changed the default behavior, this detects the actual status
-	        var isPanelSelected = currHeader.attr('aria-selected') == 'true';
-
-	         // Toggle the panel's header
-	        currHeader.toggleClass('ui-corner-all',isPanelSelected).toggleClass('accordion-header-active ui-state-active ui-corner-top',!isPanelSelected).attr('aria-selected',((!isPanelSelected).toString()));
-
-	        // Toggle the panel's icon
-	        currHeader.children('.ui-icon').toggleClass('ui-icon-triangle-1-e',isPanelSelected).toggleClass('ui-icon-triangle-1-s',!isPanelSelected);
-
-	         // Toggle the panel's content
-	        currContent.toggleClass('accordion-content-active',!isPanelSelected)    
-	        if (isPanelSelected) { currContent.slideUp(); }  else { currContent.slideDown(); }
-
-	        return false; // Cancels the default action
-	    }
-    })
-    .sortable({
-        handle: "h3",
-        placeholder: "ui-state-highlight",
-        start: function( event, ui ){
-            //change bool to true
-            sorting=true;
-            
-            //find what tab is open, false if none
-            active = $(this).accordion( "option", "active" ); 
-            
-            //possibly change animation here
-            $(this).accordion( "option", "animate", { easing: 'swing', duration: 1 } );
-            
-            //close tab
-            $(this).accordion({ active:false });
-        },
-        stop: function( event, ui ) {
-            ui.item.children( "h3" ).triggerHandler( "focusout" );
-            
-            //possibly change animation here; { } is default value
-            $(this).accordion( "option", "animate", { } );
-            
-            //open previously active panel
-            $(this).accordion( "option", "active", active );
-            
-            //change bool to false
-            sorting=false;
-        }
-    });
-});
-</script>
 </html>
