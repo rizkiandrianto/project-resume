@@ -1,0 +1,200 @@
+ @font-face {
+    font-family: 'Corbel-Reguler';
+    src: url('../fonts/corbel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @font-face {
+    font-family: 'Corbel-Bold';
+    src: url('../fonts/corbelb.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ddd;
+}
+
+
+/* ===================================================
+            ********** RESET **********
+====================================================== */
+
+h3 {
+margin-top: 0; }
+
+a {
+    cursor: pointer;
+}
+
+button {
+    background-color: #009688;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.28s;
+    transition-property: background-color, box-shadow;
+}
+
+textarea {
+    resize: none;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    padding: 15px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corbel-Reguler';
+    font-weight: bolder;
+}
+
+/* ============== for CV Page ============== */
+.docTemplate {
+  background-color: #fff;
+  padding: 50px 0 100px;
+  position: relative;
+}
+
+.docTemplate .headingTitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 50px;
+}
+
+.heading-btn {
+  text-align: center;
+  margin: 50px 0;
+}
+.heading-btn span {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: 1px solid #fff;  
+  display: inline-block;
+}
+
+section .data-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section .data-list li {
+  font-size: 18px;
+  font-family: "calibri","Open Sans","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+}
+
+section .data-list > ul > li > ul > li:first-child {
+  width: 25%;
+}
+
+section .data-list > ul > li > ul > li:last-child {
+  width: 70%;
+  padding-left: 5%;
+}
+
+section .data-list > ul > li > ul > li {
+  float: left;
+  display: inline-block;
+}
+
+/* ================== lef side section ================ */
+.main-header-bar {
+  background-color: #F0EFEB;
+  padding: 30px 0;
+  padding-left: 33.3%;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.main-header-bar h1, .main-header-bar p {
+  margin: 0;
+}
+
+.short-border {
+  width: 50%;
+  max-width: 200px;
+  height: 3px;
+  margin: 10px auto;
+  background-color: #000;
+}
+
+.leftSide { 
+  background-color: #545454; 
+  padding: 30px 15px;  
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+}
+
+.leftSide .wrapImg { margin: 15px 0; text-align: center; }
+.leftSide .wrapImg img {
+  width: 50%;
+    margin: 0 auto;
+    border-radius: 10%;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border: 2px solid #FFF; 
+}
+.leftSide .user-expertise h4 {
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.3rem;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.leftSide .user-name {
+  letter-spacing: 0.1rem;
+}
+.leftSide p {
+  margin-bottom: 0;
+}
+
+.leftSide h3 { text-align: center; }
+
+.leftSide .user-education { 
+  text-align: center;
+}
+
+.leftSide .user-education .title-section {
+  font-size: 15px;
+/*   font-weight: bold; */
+  letter-spacing: 0.05rem;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.skill-wrapper {
+  margin-top: 15px;
+}
+
+.skill-wrapper .progress-bar { background-color: #9AA4AD; }
+/* ================== lef side section ================ */
+
+.rightSide {
+  margin-top: 300px;
+}
+
+.rightSide .heading-btn span {
+  color: #333;
+  border: 2px solid #333;  
+  padding: 10px 50px;
+}
+
+.rightSide .user-profile .text-info {
+  text-align: justify;
+}
+
+
+
+
+

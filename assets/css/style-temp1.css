@@ -1,0 +1,193 @@
+ @font-face {
+    font-family: 'Corbel-Reguler';
+    src: url('../fonts/corbel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @font-face {
+    font-family: 'Corbel-Bold';
+    src: url('../fonts/corbelb.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body {
+	font-family: 'Corbel-Reguler';
+    background-color: #ddd;
+}
+
+
+/* ===================================================
+            ********** RESET **********
+====================================================== */
+
+h3 {
+margin-top: 0; }
+
+a {
+    cursor: pointer;
+}
+
+button {
+    background-color: #009688;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.28s;
+    transition-property: background-color, box-shadow;
+}
+
+textarea {
+    resize: none;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    padding: 15px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corbel-Reguler';
+    font-weight: bolder;
+}
+
+/* ============== for CV Page ============== */
+.docTemplate {
+  background-color: #fff;
+  padding: 50px 50px 100px;
+}
+
+.docTemplate .headingTitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 50px;
+}
+
+section .data-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section .data-list li {
+  font-size: 18px;
+  font-family: "calibri","Open Sans","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+}
+
+section .data-list > ul > li > ul > li:first-child {
+  width: 25%;
+}
+
+section .data-list > ul > li > ul > li:last-child {
+  width: 70%;
+  padding-left: 5%;
+}
+
+section .data-list > ul > li > ul > li {
+  float: left;
+  display: inline-block;
+}
+
+/* ================== profile section ================ */
+.profile {
+  margin-top: 100px;
+}
+
+.profile .userName {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 30px;
+}
+
+.profile .userName h3 {
+  position: relative;
+  display: inline;
+  padding: 0 25px 3px;
+}
+
+.profile .userName h3:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  border-bottom: 5px solid #000;
+}
+
+.profile .userAddress {
+  text-align: center;
+  font-family: "calibri","Open Sans","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.profile .userMail {
+  text-align: center;
+  font-size: 18px;
+  color: #007CFF;
+  text-decoration: underline;
+}
+
+.profile .profile-list {
+  margin-top: 50px;
+}
+
+.profile .img-wrap {
+  padding: 10px;
+  border: 3px solid #ededed;
+  margin-top: 25px;
+}
+
+.profile .img-wrap img {
+  width: 100%;
+}
+
+/* ================== Education section ================ */
+.education {
+  margin-top: 50px;
+}
+
+.education .section-bar {
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #999;
+}
+
+.education .section-bar h2 {
+  position: relative;
+  display: inline;
+  padding: 0 25px 3px 0;
+}
+
+.education .section-bar h2:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  border-bottom: 5px solid #000;
+}
+
+section .education-list { margin-top: 50px; }
+
+section .education-list > ul > li > ul > li:first-child {
+  width: 20%;
+}
+
+section .education-list > ul > li > ul > li:last-child {
+  width: 75%;
+  padding-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
